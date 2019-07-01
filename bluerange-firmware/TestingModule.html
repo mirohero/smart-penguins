@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Module (moduleId 12) :: Fruitymesh</title>
+    <link rel="canonical" href="http://mwaylabs.github.io/fruitymesh/bluerange-firmware/TestingModule.html">
+    <meta name="generator" content="Antora 2.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://mwaylabs.github.io/fruitymesh">Fruitymesh</a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="link navbar-item" id="header-github-logo">
+        <a class="link navbar-item" href="https://github.com/mwaylabs/fruitymesh" target="_blank"></a>
+      </div>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="bluerange-firmware" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title">
+      <a href="index.html">Fruitymesh</a>
+    </h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Quick-Start.html">Quick Start</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Features.html">Features</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Developers.html">Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Specification.html">Specification</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Modules.html">Modules</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AdvertisingModule.html">Advertising Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DebugModule.html">Debug Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DfuModule.html">DFU Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EnrollmentModule.html">Enrollment Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="IoModule.html">IO Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MeshAccessModule.html">Mesh Access Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Node.html">Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ScanningModule.html">Scanning Module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="StatusReporterModule.html">Status Report Module</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Logger.html">Logger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Class-Structure.html">Class Structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Debugging.html">Debugging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Battery-Consumption.html">Baterry Consumption</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="The-FruityMesh-Algorithm.html">The Fruitymesh Algorithm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="The-Algorithm-in-Detail.html">The Algorithm in Detail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Simulator.html">Simulator</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Implementing-a-Custom-Module.html">Implementing a Costom Module</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="FAQ.html">FAQ</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Fruitymesh</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Fruitymesh</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Fruitymesh</a></li>
+    <li class="crumb"><a href="TestingModule.html">Testing Module (moduleId 12)</a></li>
+  </ul>
+</nav>
+</div>
+<article class="doc">
+<h1>Testing Module (moduleId 12)</h1>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Testing Module is designed to automate tests for battery and throughput measurements. The module will allow us to measure the battery consumption of each individual application and also aid in estimating the throughput of the network.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functionality"><a class="anchor" href="#_functionality"></a>Functionality</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Testing Module has two roles.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Master: Testing Module by default starts in test role "Master". Master node initialises the tests by sending a start test message to the node which will perform tests.</p>
+</li>
+<li>
+<p>Slave: Testing Module changes its role to slave when it receives a message to start test.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each test runs for a maximum of 30 secs. Master node initialises every test by first connecting to the slave node and then sending a message to start test. On the other hand slave node acknowledges this start test message, disconnect from partner and switch LEDs on for 2 sec to indicate the start of test.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_test_applications"><a class="anchor" href="#_test_applications"></a>Test Applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The applications currently being tested are Advertisement, Scanning, LED, Latency and Connection Tests.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Application Name</th>
+<th class="tableblock halign-left valign-top">Application Id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ALL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LED Test</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advertisement Test</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scanning Test</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection Test</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Latency Test</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Detailed description of these application are given below.</p>
+</div>
+<div class="sect2">
+<h3 id="_led_test_application_id_1"><a class="anchor" href="#_led_test_application_id_1"></a>LED Test (Application Id 1)</h3>
+<div class="paragraph">
+<p>Slave node switch red LED on for 10 sec and do nothing and then switch green LED on and do nothing.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_advertisement_test_application_id_2"><a class="anchor" href="#_advertisement_test_application_id_2"></a>Advertisement Test (Application Id 2):</h3>
+<div class="paragraph">
+<p>Advertisement test is performed by using different values of following advertisement parameters.</p>
+</div>
+<div class="sect3">
+<h4 id="_advertisement_type"><a class="anchor" href="#_advertisement_type"></a>Advertisement Type:</h4>
+<div class="paragraph">
+<p>Advertisement types used by Testing Module are</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Connectable Undirected: Advertisement type where any device can send scan response packet and connect request to the advertiser.</p>
+</li>
+<li>
+<p>Non Connectable Undirected: Advertisement type where advertiser will not accept any connect request or scan request.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_advertisement_interval"><a class="anchor" href="#_advertisement_interval"></a>Advertisement Interval</h4>
+<div class="paragraph">
+<p>Advertisement Interval specifies the intervening time between advertising messages. The advertisement interval used by Testing Module are 20ms, 100ms, 1000ms and 4000ms</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_payload_size"><a class="anchor" href="#_payload_size"></a>Payload Size</h4>
+<div class="paragraph">
+<p>Payload size is the size of the packet to be advertised. Payload of size 10 bytes and 30 bytes are advertised by Testing Module.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_transmit_power"><a class="anchor" href="#_transmit_power"></a>Transmit Power</h4>
+<div class="paragraph">
+<p>Testing Module advertises packets with Tx power 0dbm and 4dbm.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scanning_test_application_id_3"><a class="anchor" href="#_scanning_test_application_id_3"></a>Scanning Test (Application Id 3):</h3>
+<div class="paragraph">
+<p>Scanning test is performed by using different values of following scanning parameters.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Scan for 3ms window in every 20ms interval.</p>
+</li>
+<li>
+<p>Scan for 10ms window in every 10ms interval (full duty cycle).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_connection_test_application_id_4"><a class="anchor" href="#_connection_test_application_id_4"></a>Connection Test (Application Id 4)</h3>
+<div class="paragraph">
+<p>Master node fill as many packets in the send queue as possible, each packet that was successfully put in the send queue is counted and MeshAccessConnections are used for sending these packets.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_latency_test_application_id_5"><a class="anchor" href="#_latency_test_application_id_5"></a>Latency Test (Application Id 5):</h3>
+<div class="paragraph">
+<p>Packets between master and slave node keeps bouncing back and fourth until its time to live (ttl) is 0. Master node keeps track of time from start of packet sending until ttl is 0.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminal_commands"><a class="anchor" href="#_terminal_commands"></a>Terminal Commands</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_led_test"><a class="anchor" href="#_led_test"></a>LED Test</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">starttest [bleAddress] led</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command will send a message to the slave node to start led test. The slave node will start its led test after it receives this message.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Master node sends a message to node having ble address E3:8F:26:AD:82:DE
+//to start led test.
+
+starttest E3:8F:26:AD:82:DE led</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_advertisement_test"><a class="anchor" href="#_advertisement_test"></a>Advertisement Test</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">starttest [bleAddress] adv [advInterval] [advTxPower] [advType] [advPayloadSize]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command will send a message to the slave node to start advertisement test. The slave node will perform advertisement test for 30 secs after it receives this message.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command Argument</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bleAddress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ble address of the slave node which will perform the test</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advInterval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advertising Interval in milli seconds (the value should be in the range                           32-16384). It has a default value of 100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advTxPower</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transmit Power (the value should be either 0 or 4). It has a default value                        of 0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advertisement Type (The values should be either 0 for connectable                                 undirected or 3 for non connectable undirected). It has a default value of                        0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advPayloadSize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payload Size (The value should be in the range 0 - 30 bytes). It has a                            default value of 10</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Master node sends a message to node having ble address E3:8F:26:AD:82:DE to start
+//advertisement test with advertising interval 100ms, Tx Power 0 dbm, advertisement
+//type connectable undirected and payload size 10 bytes.
+
+starttest E3:8F:26:AD:82:DE adv 100 0 0 10</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scanning_test"><a class="anchor" href="#_scanning_test"></a>Scanning Test</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">starttest [bleAddress] scan [scanInterval] [scanWindow]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command will send a message to the slave node to start scanning test. The slave node will scan for 30 secs after it receives this message.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command Argument</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bleAddress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ble address of the slave node which will perform the test</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scanInterval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scanning Interval in milli seconds (the value should be in the range 4 - 16384). It has a default value of 20.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scanWindow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scanning Window in milli seconds (the value should be either 4 or 16384).                         It has a default value of 3.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Master node sends a message to node having ble address E3:8F:26:AD:82:DE to start
+//scanning test with scan interval 20ms and scan window 20ms
+
+starttest E3:8F:26:AD:82:DE scan 20 20</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_latency_test"><a class="anchor" href="#_latency_test"></a>Latency Test</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">starttest [bleAddress] lat [ttl]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command will send a message to the slave node that latency test should be performed. The master node starts the test after it receives acknowledgement message from slave.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command Argument</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bleAddress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ble address of the slave node which will perform the test</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ttl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time to live (ttl) and has a default value of 30.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Master node sends a message to node having ble address E3:8F:26:AD:82:DE to start
+//latency test with ttl 20
+
+starttest E3:8F:26:AD:82:DE lat 20</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_connection_test"><a class="anchor" href="#_connection_test"></a>Connection Test</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">starttest [bleAddress] conn [connPacketSize]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command will send a message to the slave node that connection test will be performed. The master node starts the test after it receives acknowledgement message from slave.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command Argument</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bleAddress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ble address of the slave node which will perform the test</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketSize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Size of the packets to be queued. It has a default value of 12.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Master node sends a message to node having ble address E3:8F:26:AD:82:DE to start
+//connection test with connPacketSize 25
+starttest E3:8F:26:AD:82:DE conn 25</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_all_test"><a class="anchor" href="#_all_test"></a>All Test</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">starttest [bleAddress] all</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command will run each test sequentially for 30 seconds.Below you will find the tests covered in all tests.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Test Application</th>
+<th class="tableblock halign-left valign-top">Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LED TEST</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LATENCY TEST</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ttl = 30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CONNECTION TEST</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">packetSize = 12, 36 bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SCANNING TEST</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scanInterval = 20ms and scanWindow = 3ms, 20ms</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADVERTISEMENT TEST (advTxPower = 0 dbm, advType = Connectable)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advInterval = 100ms, 200ms and advPayloadSize = 30 bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADVERTISEMENT TEST (advTxPower = 0 dbm, advType = Non-Connectable)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advInterval = 100ms, 400ms, 1000ms, 4000ms and advPayloadSize = 10, 30 bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADVERTISEMENT TEST (advTxPower = 4 dbm, advType = Non-Connectable)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advInterval = 100ms and advPayloadSize = 30 bytes</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Master node sends a message to node having ble address E3:8F:26:AD:82:DE to
+//start running tests sequentially each 30 sec
+
+starttest E3:8F:26:AD:82:DE all</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_messages"><a class="anchor" href="#_messages"></a>Messages</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_start_test"><a class="anchor" href="#_start_test"></a>Start Test</h3>
+<div class="sect3">
+<h4 id="_request"><a class="anchor" href="#_request"></a>Request</h4>
+<div class="paragraph">
+<p>actionType: START_AUTOMATED_TEST</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bytes</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketModule</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">application</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Application id</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advInterval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advertising Interval</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advTxPower</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advertising Tx Power</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advPayloadSize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advertising Payload</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scanInterval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scanning Interval</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scanWindow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scanning Window</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ttl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time to live (ttl)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketSize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Size of packets to be queued.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_response"><a class="anchor" href="#_response"></a>Response</h4>
+<div class="paragraph">
+<p>actionType: START_AUTOMATED_TEST_RESPONSE</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketModule</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>Build with Antora</p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script src="../_/js/vendor/lunr.js"></script>
+<script>antoraLunr.init("../_/../search_index.json")</script>
+<script src="../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+
+  </body>
+</html>
