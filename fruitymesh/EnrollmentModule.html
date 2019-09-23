@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrollment Module (moduleId 5) :: Fruitymesh</title>
+  <link rel="canonical" href="http://mwaylabs.github.io/fruitymesh/fruitymesh/EnrollmentModule.html">
+  <meta name="generator" content="Antora 2.0.0">
+  <link rel="stylesheet" href="../_/css/site.css">
+  <link rel="stylesheet" href="../_/css/footer.css">
+<link rel="icon" type="image/png" href="../_/img/favicon.png" />
+</head>
+
+<body class="article">
+  <header class="header" role="banner">
+<header class="header" role="banner">
+  <div class="navbar-top">
+    <a class="navbar-logo" id="fruitymesh-logo-padding" href="https://mwaylabs.github.io/fruitymesh/fruitymesh/index.html">
+      <div class="navbar-item">
+        <img src="../_/img/fruitymesh_logo.png" alt="Fruitymesh">
+      </div>
+    </a>
+    <div class="navbar-item">
+      <div id="search-wrapper">
+        <input id="search-input" type="text" placeholder="Search...">
+      </div>
+    </div>
+  </div>
+  <nav class="navbar-bottom fruitymesh-header-color">
+    <a href="https://github.com/mwaylabs/fruitymesh">
+      <div class="navbar-item">Fruitymesh on Github</div>
+    </a>
+  </nav>
+</header>
+
+</header>
+  <div class="main-wrapper">
+<div class="navigation-container" data-component="" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <button class="navigation-toggle"></button>
+  <nav class="nav-menu">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Quick-Start.html">Quick Start</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Usage.html">Usage</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Features.html">Features</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Developers.html">Developers</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Specification.html">Specification</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Modules.html">Modules</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AdvertisingModule.html">Advertising Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DebugModule.html">Debug Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DfuModule.html">DFU Module</a>
+      </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="EnrollmentModule.html">Enrollment Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="IoModule.html">IO Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MeshAccessModule.html">Mesh Access Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Node.html">Node</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ScanningModule.html">Scanning Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="StatusReporterModule.html">Status Report Module</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Logger.html">Logger</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Class-Structure.html">Class Structure</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Debugging.html">Debugging</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Battery-Consumption.html">Battery Consumption</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="The-FruityMesh-Algorithm.html">The Fruitymesh Algorithm</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="The-Algorithm-in-Detail.html">The Algorithm in Detail</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Simulator.html">Simulator</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Tutorials.html">Tutorials</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Implementing-a-Custom-Module.html">Implementing a Custom Module</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="FAQ.html">FAQ</a>
+      </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<article class="doc"><a name="section-top"></a>
+<h1>Enrollment Module (moduleId 5)</h1>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>New nodes are normally flashed without a <code>networkId</code> assigned (set to 0). This means they will not connect to a mesh as long as they are not enrolled. The term enrolled is used in synonym with provisioned or commisioned.</p>
+</div>
+<div class="paragraph">
+<p>In order to assign a node to a mesh, the user has to give a <code>networkId</code>, the <code>networkKey</code> and a unique <code>nodeId</code> for this mesh. This can be done by a MeshGateway or a dedicated enrollment app. The enrollment packet should be sent to the broadcast address 0 and must contain to serial number of the node to be enrolled.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functionality"><a class="anchor" href="#_functionality"></a>Functionality</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_enrolling_over_the_mesh"><a class="anchor" href="#_enrolling_over_the_mesh"></a>Enrolling Over The Mesh</h3>
+<div class="paragraph">
+<p>The <em>EnrollmentModule</em> supports enrollments over the mesh. A normal enrollment message is sent as a broadcast through the mesh together with the <code>nodeKey</code> of the node that should be enrolled. All receiving nodes of this message try - at a certain random percentage - to scan for this node. They temporarily store the enrollment data and connect to the node once it is found and enroll it. Also, at a certain random percentage, the node sends an enrollment proposal through the mesh that contains some nearby serial numbers that the MeshGateway might like to enroll.</p>
+</div>
+<div class="paragraph">
+<p>If the message is sent to a specific <code>nodeId</code>, this node will try to scan for the other node with a 100 percent probability. This is useful if the nodes position is already known, e.g. by parsing an enrollment proposal.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pre_enrollment"><a class="anchor" href="#_pre_enrollment"></a>Pre-Enrollment</h3>
+<div class="paragraph">
+<p>The <em>EnrollmentModule</em> supports <em>PreEnrollments</em>. A module can register itself using <em>SetPreEnrollmentHandler</em>. The <em>EnrollmentModule</em> then calls this handler when an unenrollment or enrollment is received. The module then has a fixed time to perform an enrollment of other components, e.g. an external controller. Once it is done, it must call <em>SaveEnrollment</em> so that the node enrollment is processed. If this is not called within a defined time, the enrollment will fail with the result code <code>PreEnrollmentFailed</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unencrypted_enrollment"><a class="anchor" href="#_unencrypted_enrollment"></a>Unencrypted Enrollment</h3>
+<div class="paragraph">
+<p>If <code>allowUnenrolledUnsecureConnections</code> is set in the feature set and the node is in an unenrolled state, nodes accept connections with <code>FM_KEY_ID_ZERO</code> for enrollment. This allows an easier enrollment process.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Such nodes should never be used in an environment where unauthorized people have access because these people also have easy access by design.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_different_enrollment_scenarios"><a class="anchor" href="#_different_enrollment_scenarios"></a>Different Enrollment Scenarios</h3>
+<div class="sect3">
+<h4 id="_unenrolled_node"><a class="anchor" href="#_unenrolled_node"></a>Unenrolled Node</h4>
+<div class="paragraph">
+<p>If the <code>defaultNetworkId</code> (flashed into UICR) is set to 0 and no enrollment configuration is present, the node is unenrolled and the node module is inactive. Enrollment is possible by connecting using a <em>MeshAccessConnection</em> with the node key and sending the enrollment data.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_node_enrolled_into_a_different_network"><a class="anchor" href="#_node_enrolled_into_a_different_network"></a>Node Enrolled Into A Different Network</h4>
+<div class="paragraph">
+<p>If the node was previously enrolled into a different network, the user might not have access to this network. The node module is active and searches for other nodes in the same network. It is still possible to connect by using a <em>MeshAccessConnection</em> and send a different enrollment to the node.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_node_enrolled_into_the_same_network_or_an_enrollment_network"><a class="anchor" href="#_node_enrolled_into_the_same_network_or_an_enrollment_network"></a>Node Enrolled Into The Same Network Or An Enrollment Network</h4>
+<div class="paragraph">
+<p>If the <code>defaultNetworkId</code> is set to 1 or any other ID known by the MeshGateway, we can send a new enrollment through this enrollment network and the node will pick it up and will reboot into the new network.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_default_enrollment"><a class="anchor" href="#_default_enrollment"></a>Default Enrollment</h3>
+<div class="paragraph">
+<p>The data stored in the UICR defines the default enrollment of a node. If a node is assigned to <code>networkId</code> 0 by default, it doesn&#8217;t participate in the mesh until it is enrolled. If a node is assigned another <code>networkId</code> and <code>networkKey</code> as a default, it tries to connect to the mesh after it is flashed. Resetting the node reverts the node back to its defaults.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminal_commands"><a class="anchor" href="#_terminal_commands"></a>Terminal Commands</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_enrolling_a_node"><a class="anchor" href="#_enrolling_a_node"></a>Enrolling A Node</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Enroll a node
+action [nodeId] enroll basic [serialNumber] [newNodeId] [newNetworkId] {newNetworkKey} {newUserBaseKey} {newOrganizationKey} {nodeKey} {timeoutSec} {enrollOnlyIfUnenrolled} {requestHandle}
+
+//Enroll BBBBB into network 7 that already has nodes 1 and 2
+//Node must be connected to terminal or connected to the node with the terminal (e.g. by using a MeshAccessConnection)
+action 0 enroll basic BBBBB 3 7 78:56:34:12:78:56:34:12:78:56:34:12:78:56:34:12
+
+//Enroll node BBBBB into network 5 over the mesh with new node id 2
+//networkKey will be 11:..., userBaseKey 22:..., orgaKey: 33:...
+//nodeKey is given so that enrollment over mesh can connect securely to the node
+action 0 enroll basic BBBBB 2 5 11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11 22:22:22:22:22:22:22:22:22:22:22:22:22:22:22:22
+33:33:33:33:33:33:33:33:33:33:33:33:33:33:33:33
+73:63:92:12:63:94:30:44:63:67:23:11:90:11:42:52 10 0</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_removing_an_enrollment"><a class="anchor" href="#_removing_an_enrollment"></a>Removing An Enrollment</h3>
+<div class="paragraph">
+<p>Removing an enrollment from a node will reset all settings to default (factory reset). The node will return to its default network.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">//Remove an enrollment
+action [nodeId] enroll remove [serialNumber] {requestHandle}
+
+//E.g. removing the enrollment of the node with serial number BCBCF
+action 0 enroll remove BCBCF</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_messages"><a class="anchor" href="#_messages"></a>Messages</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_message_types"><a class="anchor" href="#_message_types"></a>Message Types</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">enum EnrollmentModuleTriggerActionMessages{
+	SET_ENROLLMENT_BY_SERIAL=0,
+	REMOVE_ENROLLMENT=1
+};
+enum EnrollmentModuleActionResponseMessages{
+	ENROLLMENT_RESPONSE=0,
+	REMOVE_ENROLLMENT_RESPONSE=1,
+	ENROLLMENT_PROPOSAL=2
+};</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enroll_a_beacon"><a class="anchor" href="#_enroll_a_beacon"></a>Enroll A Beacon</h3>
+<div class="sect3">
+<h4 id="_request"><a class="anchor" href="#_request"></a>Request</h4>
+<div class="paragraph">
+<p>actionType: SET_ENROLLMENT</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 50.0001%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>connPacketModule</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">serialNumberIndex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Index of the serial number to be enrolled</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">newNodeId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The new node id that should be assigned to this node (Set to 0 to leave unchanged)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">newNetworkId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The new network id to be assigned (Set to 0 to leave unchanged)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">newNetworkKey</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The network encryption key to be used (Set to 000&#8230;&#8203;.000 to leave unchanged)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">newUserBaseKey</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The new user base key to derrive all user keys from (Set to 000&#8230;&#8203;.000 to leave unchanged)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">newOrganizationKey</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A key used for an organization, e.g. used by assets because these must work organization wide.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nodeKey (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the enrollment should be done over the mesh, the nodeKey must be given so that another node can connect securely to the to-be-enrolled node</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7 bit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">timeoutSec (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enrollment over the mesh uses a timeout how long a node will try to look for the to-be-enrolled node. A good default value is 10 seconds which will result in a maximum of 14 seconds time for an enrollment. (Sending 0 will use the default value)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 bit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enrollOnlyIfUnenrolled (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If set to 0, the enrollment will be done even if the other node is already enrolled. If set to 1, the node will generate an error response for the enrollment (ENROLL_RESPONSE with error code .</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_response"><a class="anchor" href="#_response"></a>Response</h4>
+<div class="paragraph">
+<p>This acknowledges a received enrollment.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">0x00 = ENROLL_RESPONSE_OK
+0x01 = ENROLL_RESPONSE_FLASH_BUSY //(please retry)
+0x02 = ENROLL_RESPONSE_WRONG_DATA_ALIGNMENT //(fatal error)
+0x03 = ENROLL_RESPONSE_NO_SPACE //(fatal error)
+0x10 = ENROLL_RESPONSE_ALREADY_ENROLLED_WITH_DIFFERENT_DATA //(can use enrollOnlyIfUnenrolled = 0 to force the enrollment)
+0x11 = ENROLL_RESPONSE_PREENROLLMENT_FAILED //Another module that needs to enroll itself first, failed to enroll in the required time</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>actionType: <code>ENROLLMENT_RESPONSE</code></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 50.0001%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketModule</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">serialNumberIndex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Index of the serial number that was enrolled</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">result</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See above for possible result codes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_response_2"><a class="anchor" href="#_response_2"></a>Response</h4>
+<div class="paragraph">
+<p>Randomly and if available, a node might respond with an enrollment proposal that contains a number of nearby serialNumberIndexes. If the MeshGateway wants to enroll one of these nodes, it can send a directed message to this node to enroll the other nearby node. If a serialNumberIndex is 0, there were not enough nodes around or not yet scanned.</p>
+</div>
+<div class="paragraph">
+<p>actionType: <code>ENROLLMENT_PROPOSAL</code></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 50.0001%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketModule</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">serialNumberIndex[0]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nearby node serial number index</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">serialNumberIndex[1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nearby node serial number index</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">serialNumberIndex[2]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nearby node serial number index</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_remove_an_enrollment"><a class="anchor" href="#_remove_an_enrollment"></a>Remove an Enrollment</h3>
+<div class="sect3">
+<h4 id="_request_2"><a class="anchor" href="#_request_2"></a>Request</h4>
+<div class="paragraph">
+<p>actionType: <code>REMOVE_ENROLLMENT</code></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 50.0001%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketModule</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">serialNumberIndex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Index of the serial number to be enrolled</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_response_3"><a class="anchor" href="#_response_3"></a>Response</h4>
+<div class="paragraph">
+<p>The result of removing an enrollment:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-C++ hljs" data-lang="C++">0x00 = ENROLL_RESPONSE_OK
+0x01 = ENROLL_RESPONSE_FLASH_BUSY //(please retry)
+0x02 = ENROLL_RESPONSE_WRONG_DATA_ALIGNMENT //(fatal error)
+0x03 = ENROLL_RESPONSE_NO_SPACE //(fatal error)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>actionType: <code>REMOVE_ENROLLMENT_RESPONSE</code></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 50.0001%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketModule</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">serialNumberIndex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Index of the serial number that was enrolled</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">result</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See above for possible result codes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">Enrollment Module (moduleId 5)</h3>
+  <div id="article-toc"></div>
+</aside>
+  </main>
+</div>
+  <footer class="footer fruitymesh-footer-padding">
+<p>This project is under active development at the <a href="http://www.mwaysolutions.com/" >M-Way Solutions GmbH,</a> Germany.</p>
+<p>We use FruityMesh ourselves in conjunction with our custom MeshGateway to build services such as connected lights, asset tracking and much more for our customers.</p>
+</footer>
+<script type="text/javascript">
+  window.antora = window.antora || {}
+  window.antora.basePath = '..'
+  window.antora.pagePath = '/fruitymesh/EnrollmentModule.html'
+</script>
+<script src="../_/js/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js"></script>
+<script src="../_/js/vendor/search.js"></script>
+<script async src="../_/../search-index.js"></script>
+<script src="../_/js/vendor/highlight.js"></script>
+<script src="../_/js/vendor/zoom.js"></script>
+<script>hljs.initHighlighting()</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
+<script>
+  tocbot.init({
+    tocSelector: '#article-toc',
+    contentSelector: 'article',
+    headingSelector: 'h2, h3, h4, h5, h6',
+    collapseDepth: 6,
+    positionFixedSelector: '#article-toc',
+    scrollSmooth: true,
+  });
+  var tocList = document.getElementById('article-toc').getElementsByClassName('toc-list');
+  if (tocList && tocList.length > 0 && tocList[0].childNodes.length > 0) {
+    document.getElementById('article-toc').parentNode.classList.remove('hidden');
+  }
+</script>
+</body>
+
+</html>

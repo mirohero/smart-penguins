@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specification :: Fruitymesh</title>
+  <link rel="canonical" href="http://mwaylabs.github.io/fruitymesh/fruitymesh/Specification.html">
+  <meta name="generator" content="Antora 2.0.0">
+  <link rel="stylesheet" href="../_/css/site.css">
+  <link rel="stylesheet" href="../_/css/footer.css">
+<link rel="icon" type="image/png" href="../_/img/favicon.png" />
+</head>
+
+<body class="article">
+  <header class="header" role="banner">
+<header class="header" role="banner">
+  <div class="navbar-top">
+    <a class="navbar-logo" id="fruitymesh-logo-padding" href="https://mwaylabs.github.io/fruitymesh/fruitymesh/index.html">
+      <div class="navbar-item">
+        <img src="../_/img/fruitymesh_logo.png" alt="Fruitymesh">
+      </div>
+    </a>
+    <div class="navbar-item">
+      <div id="search-wrapper">
+        <input id="search-input" type="text" placeholder="Search...">
+      </div>
+    </div>
+  </div>
+  <nav class="navbar-bottom fruitymesh-header-color">
+    <a href="https://github.com/mwaylabs/fruitymesh">
+      <div class="navbar-item">Fruitymesh on Github</div>
+    </a>
+  </nav>
+</header>
+
+</header>
+  <div class="main-wrapper">
+<div class="navigation-container" data-component="" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <button class="navigation-toggle"></button>
+  <nav class="nav-menu">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Quick-Start.html">Quick Start</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Usage.html">Usage</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Features.html">Features</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Developers.html">Developers</a>
+      </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="Specification.html">Specification</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Modules.html">Modules</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AdvertisingModule.html">Advertising Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DebugModule.html">Debug Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DfuModule.html">DFU Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EnrollmentModule.html">Enrollment Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="IoModule.html">IO Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MeshAccessModule.html">Mesh Access Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Node.html">Node</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ScanningModule.html">Scanning Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="StatusReporterModule.html">Status Report Module</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Logger.html">Logger</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Class-Structure.html">Class Structure</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Debugging.html">Debugging</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Battery-Consumption.html">Battery Consumption</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="The-FruityMesh-Algorithm.html">The Fruitymesh Algorithm</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="The-Algorithm-in-Detail.html">The Algorithm in Detail</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Simulator.html">Simulator</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Tutorials.html">Tutorials</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Implementing-a-Custom-Module.html">Implementing a Custom Module</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="FAQ.html">FAQ</a>
+      </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<article class="doc"><a name="section-top"></a>
+<h1>Specification</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most parts of the protocol should not be modified to
+enable interoperability. Some of the protocol decisions are found on
+this page and ongoing discussions will show whether some of these
+specifications should be changed.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advertising_packets"><a class="anchor" href="#_advertising_packets"></a>Advertising Packets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FruityMesh uses a number of advertising packets,
+the most important one being the <em>JOIN_ME</em> packet that is used for
+discovery of nearby nodes that also run FruityMesh.</p>
+</div>
+<div class="sect2">
+<h3 id="_advertising_packet_with_manufacturer_specific_data"><a class="anchor" href="#_advertising_packet_with_manufacturer_specific_data"></a>Advertising Packet with Manufacturer Specific Data</h3>
+<div class="paragraph">
+<p>There are two types of advertising packets used by FruityMesh. One uses the manufacturer specific advertisement structure, the other uses the serviceData advertisement structure.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Advertising Header With Manufacturer Specific Data</caption>
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bytes</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advStructureFlags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory Flags Adv Structure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advStructureManufacturer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manufacturer Data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manufacturer Specific Adv Structure with 0x024D as company identifier.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>meshIdentifier</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifies this as a mesh advertising packet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NetworkId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>networkId</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The network ID of this node</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>messageType</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to identify a number of different advertising messages within the mesh</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_manufacturer_id"><a class="anchor" href="#_manufacturer_id"></a>Manufacturer ID</h4>
+<div class="paragraph">
+<p>The company ID 0x024D (M-Way Solutions GmbH) is registered with the Bluetooth SIG and may be used by any implementation that conforms to the latest specifications of the FruityMesh protocol.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mesh_identifier"><a class="anchor" href="#_mesh_identifier"></a>Mesh Identifier</h4>
+<div class="paragraph">
+<p>The mesh identifier is 0xF0. No other identifier shall be used. Future versions might change this identifier. The purpose of the mesh identifier is to enable different protocols under the same manufacturer ID.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_network_identifier"><a class="anchor" href="#_network_identifier"></a>Network Identifier</h4>
+<div class="paragraph">
+<p>The network identifier can be changed by the user. In combination with the <em>networkKey</em>, this allows different meshes to co-exist in the same physical area. It is set either during flashing or during enrollment.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_message_type"><a class="anchor" href="#_message_type"></a>Message Type</h4>
+<div class="paragraph">
+<p>The <em>messageType</em> is used to distinguish between different messages. The same <em>messageType</em> definitions are used for advertising packets and for connection packets. This allows us to send the same message over another "transport" if desired and compatible with the message format.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_join_me_packet_messagetype_1"><a class="anchor" href="#_join_me_packet_messagetype_1"></a>JOIN_ME Packet (MessageType 1)</h3>
+<div class="paragraph">
+<p>The <em>JOIN_ME</em> packet contains all the information that other nodes can use to determine their best connection partner. The <em>messageId</em> in the header must be set to 1. Future <em>JOIN_ME</em> packets can have a different <em>messageId</em> and different values that can then be used in the Cluster Score Function. The current implementation uses the <em>clusterSize</em> and the number of <em>freeIn</em> and <em>freeOut</em> connections.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bytes</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">advHeaderManufacturerSpecific</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>header</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The above depicted manufacturer specific header</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NodeId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>sender</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em>nodeId</em> of the sending node</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ClusterId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>clusterId</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consists of the founding node&#8217;s ID and the connection loss / restart counter</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ClusterSize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>clusterSize</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of nodes in this cluster</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 bit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8 : 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>freeMeshInConnections</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of free in connections (as peripheral)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5 bit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8 : 5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>freeMeshOutConnections</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of free out connections (as central)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>batteryRuntime</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contains the expected runtime of the device (1-59=minutes, 60-83=1-23hours, 84-113=1-29days, 114-233=1-119months, 234-254=10-29years, 255=infinite)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">i8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>txPower</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Power of two&#8217;s complement in dBm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>deviceType</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cf. <a href="#_device_types">Device Types</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>hopsToSink</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of hops to the shortest sink</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>meshWriteHandle</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The GATT handle for the mesh communication characteristic</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ClusterId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>ackField</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contains the acknowledgement from another node for the slave connection procedure</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_advertising_packet_with_service_data"><a class="anchor" href="#_advertising_packet_with_service_data"></a>Advertising Packet With Service Data</h3>
+<div class="paragraph">
+<p>Another type of advertising packet used by FruityMesh uses the Service Data Adv Structure. This is important when dealing with mobile devices since some have hardware filtering with no support for manufacturer specific data.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bytes</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Mandatory data</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>advStructureFlags</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(len, type, flags byte)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service UUID complete</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>advStructureUUID16</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(len, type, 2 byte UUID 0xFE12)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service Data header</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>advStructureServiceData</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(len, type, 2 byte UUID 0xFE12)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>CustomDataHeader</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>messageType</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to determine between different messages.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_other_advertising_packets"><a class="anchor" href="#_other_advertising_packets"></a>Other Advertising Packets</h3>
+<div class="paragraph">
+<p>FruityMesh can be used to distribute all advertising packets that conform to the BLE specification. These can be Eddystone, iBeacon or any other kind of advertising messages. These are however not essential for FruityMesh itself and are therefore not documented here. Have a look at the <a href="AdvertisingModule.html" class="page">AdvertisingModule</a> for more information.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_connection_packets"><a class="anchor" href="#_connection_packets"></a>Connection Packets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The mesh uses a number of packets that are sent
+over connections. Most packets that are sent over connections must have this header. There are some exceptions to this (e.g. split packets use a two byte message header for less overhead. The <em>messageType</em> is used to identify if the <em>connPacketHeader</em> is used or not.</p>
+</div>
+<div class="sect2">
+<h3 id="_connection_packet_header"><a class="anchor" href="#_connection_packet_header"></a>Connection Packet Header</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Format of a connPacketHeader</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bytes</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>messageType</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type of message</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>senderId</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node ID of the sender</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>receiverId</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node ID of the receiver</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_module_connection_packet_header"><a class="anchor" href="#_module_connection_packet_header"></a>Module Connection Packet Header</h3>
+<div class="paragraph">
+<p>Modules use an extended message header to guarantee that there are no collisions between different functionality. This extended header is used for the following messageTypes:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Messages in extended package header</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">MessageType</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">51 / 0x33</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MESSAGE_TYPE_MODULE_TRIGGER_ACTION</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A request for a node to perform an action</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">52 / 0x33</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MESSAGE_TYPE_MODULE_ACTION_RESPONSE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Response message for a previous request</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">53 / 0x33</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MESSAGE_TYPE_MODULE_GENERAL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An event that does not need a response</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following describes the format of the extended header:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Format of a connPacketModule extended header</caption>
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bytes</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">connPacketHeader</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>header</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The standard <em>connPacketHeader</em> used for all messages.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>moduleId</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The id of a module, a module provides different functionality for one specific task.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>requestHandle</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A handle that can be used e.g. like a counter. Responses will always be returned with the same handle given in the request.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>actionType</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the type of action that should be executed by the module. An individual list of <em>subCommands</em> is available for each of the <em>messageTypes</em> given above. E.g. there could be a <code>MODULE_TRIGGER_ACTION</code> message with the <em>actionType</em> set to 1 (PING) to execute a ping. The response would be a <code>MODULE_ACTION_RESPONSE</code> message with the <em>actionType</em> set to 1 (<code>PING_RESPONSE</code>).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u8[]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>data</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">additional payload data for the command</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_node_id"><a class="anchor" href="#_node_id"></a>Node ID</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A node ID (<em>nodeId</em>) is a way of addressing devices in a network. Each
+device in a network must have a unique <em>nodeId</em> assigned to it that must
+not clash with the node ID of another device.</p>
+</div>
+<div class="paragraph">
+<p>There are different node ID ranges that are used for different purposes:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Node ID ranges</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Node ID</th>
+<th class="tableblock halign-left valign-top">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Broadcast address to reach all nodes in a network</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1&#8230;&#8203;1999</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Uniquely address devices (nodes, sinks, &#8230;&#8203;)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2000&#8230;&#8203;19999</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual addresses to address smartphones connected to the mesh</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20000&#8230;&#8203;20999</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address groups</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address for the current node itself</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30001&#8230;&#8203;30999</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specify the number of hops that a packet
+can travel. (30 001 e.g. specifies that the packet must only reach the
+direct neighbours)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">31000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Have a packet travel to the shortest sink
+possible (not yet implemented)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">33000&#8230;&#8203;39999</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Assign nodeIds uniquely over multiple meshes for the same organization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">others</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All other node IDs are currently reserved</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_serial_numbers_serialnumberindex"><a class="anchor" href="#_serial_numbers_serialnumberindex"></a>Serial Numbers / SerialNumberIndex</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The serial numbers are assigned
+randomly using the <em>chipId</em> when developing with the open source variant.
+They should however be uniquely assigned using the UICR once devices go
+into production. Contact M-Way Solutions GmbH before using serial numbers in production
+with the M-Way Solutions GmbH manufacturing ID. The serialNumberIndex is a 32 bit
+unsigned integer that can be uniquely mapped from and to a serial number
+using the <em>GenerateBeaconSerialForIndex</em> and <em>GetIndexForSerial</em> methods in
+the <em>Utility</em> class.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_encryptionkeys"><a class="anchor" href="#_encryptionkeys"></a>EncryptionKeys</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are a number of different keys used throughout
+FruityMesh. These are all 128-bit keys and are used for AES encryption
+between the nodes, as well as for communication with smartphones or other
+devices.</p>
+</div>
+<div class="sect2">
+<h3 id="_no_key_fm_key_id_zero_0"><a class="anchor" href="#_no_key_fm_key_id_zero_0"></a>No Key (FM_KEY_ID_ZERO = 0)</h3>
+<div class="paragraph">
+<p>Can only be used if a node is not enrolled
+and uses a key filled with all 0x00 for encryption.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_node_key_fm_key_id_node_1"><a class="anchor" href="#_node_key_fm_key_id_node_1"></a>Node Key (FM_KEY_ID_NODE = 1)</h3>
+<div class="paragraph">
+<p>This key is used for the lifetime of
+a device and is uniquely generated during production. It must be kept
+secure because it allows full configuration access, e.g. enrolling and
+removing the enrollment.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_network_key_fm_key_id_network_2"><a class="anchor" href="#_network_key_fm_key_id_network_2"></a>Network key (FM_KEY_ID_NETWORK = 2)</h3>
+<div class="paragraph">
+<p>The network key is shared
+between all nodes that belong to a mesh network. Whoever is in posession
+of this key can configure all nodes in the network and can send any
+message. It is important to keep this key secret, but it is
+possible to change it if it is compromised.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_userbase_key_fm_key_id_base_user_3"><a class="anchor" href="#_userbase_key_fm_key_id_base_user_3"></a>UserBase Key (FM_KEY_ID_BASE_USER = 3)</h3>
+<div class="paragraph">
+<p>This is a key that can&#8217;t be
+used to connect. It is used to derive all other user keys.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_organization_key_fm_key_id_organization_4"><a class="anchor" href="#_organization_key_fm_key_id_organization_4"></a>Organization Key (FM_KEY_ID_ORGANIZATION = 4)</h3>
+<div class="paragraph">
+<p>The organization key
+is shared between all networks of an organization. It allows access to a
+limited set of functionality, e.g. necessary for tracking assets between
+differen meshes. If the organization key leaks, it is necessary to
+reconfigure all meshes of the organization.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_restrained_key_fm_key_id_restrained_5"><a class="anchor" href="#_restrained_key_fm_key_id_restrained_5"></a>Restrained Key (FM_KEY_ID_RESTRAINED = 5)</h3>
+<div class="paragraph">
+<p>The restrained key is generated based on the node key. It is a
+node key with limited access rights.</p>
+</div>
+<div class="paragraph">
+<p>The "restrained key" can be derived from the node key by using an AES-128 bit
+encryption by encrypting the ASCII-String "RESTRAINED_KEY00" (without
+terminating 0) using the node key as the AES key. Example values are:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Examples of node keys and "restrained keys"</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Node Key</th>
+<th class="tableblock halign-left valign-top">Restrained Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2A:FC:35:99:4C:86:11:48:58:4C:C6:D9:EE:D4:A2:B6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FF:EE:DD:CC:BB:AA:99:88:77:66:55:44:33:22:11:00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9E:63:8B:94:65:85:91:99:A9:74:7D:A7:40:7C:DD:B3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DE:AD:BE:EF:DE:AD:BE:EF:DE:AD:BE:EF:DE:AD:BE:EF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3C:58:54:FC:29:96:00:59:B7:80:6B:4C:78:49:8B:27</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">00:01:02:03:04:05:06:07:08:09:0A:0B:0C:0D:0E:0F</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60:AB:54:BB:F5:1C:3F:77:FA:BC:80:4C:E0:F4:78:58</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_user_keys_fm_key_id_user_derived_start_10_to_uint32_max_2"><a class="anchor" href="#_user_keys_fm_key_id_user_derived_start_10_to_uint32_max_2"></a>User Keys (FM_KEY_ID_USER_DERIVED_START = 10 to UINT32_MAX / 2)</h3>
+<div class="paragraph">
+<p>The user base key is used to generate millions of user keys that
+can be given to users or user groups. A user key allows access to a
+limited set of commands and can be restricted in functionality depending
+on the use case. If the <em>userBaseKey</em> leaks, all <em>userKeys</em> have to be
+regenerated and distributed to users.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+A key that is filled with 0xFF is considered invalid and cannot be
+used.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_device_types"><a class="anchor" href="#_device_types"></a>Device Types</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are different device types that are given to nodes with specific functionality:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. List of device types</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">DeviceType</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEVICE_TYPE_INVALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not used</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEVICE_TYPE_STATIC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A node that is installed somewhere with a
+position that will not change much over time.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEVICE_TYPE_ROAMING</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A node that can move around freely.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEVICE_TYPE_SINK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A node that is installed at a fixed place and
+collects all the data (typically a MeshGateway).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEVICE_TYPE_ASSET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A node that moves around and broadcasts its
+presence so that it can be detected by a mesh.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEVICE_TYPE_LEAF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A node that will only connect to the mesh as a
+leaf but will not relay any data (Useful if its position changes but it
+needs a constant data connection)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uicr"><a class="anchor" href="#_uicr"></a>UICR</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The UICR is a special persistant storage that is used to store
+factory defaults once a node is flashed. The NRF_UICR&#8594;CUSTOMER area is
+used to store the data on nRF chips.</p>
+</div>
+<div class="paragraph">
+<p>If you want to store a serial number, <em>nodeKey</em>, etc. for a node, you
+must write the UICR during flashing. The NRF_UICR&#8594;CUSTOMER area is used
+for that purpose and starts at 0x10001080. You can use
+<a href="http://srecord.sourceforge.net/">srec_cat</a> to produce a .hex file
+containing the desired UICR data. This can then be merged with the SoftDevice and Application or you can flash each one separately.</p>
+</div>
+<div class="paragraph">
+<p>FruityMesh will boot with random data (random <em>nodeId</em> / <em>serialNumber</em> /
+&#8230;&#8203;) if no data is present in the UICR. The data will however be
+persistent across reboots as it is generated according to the internal chip id from the FICR. Layout of UICR memory:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 8. Layout of UICR memory</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Offset</th>
+<th class="tableblock halign-left valign-top">Size (Bytes)</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MAGIC_NUMBER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be set to 0xF07700 when UICR data is available</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BOARD_TYPE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accepts an integer that defines the hardware board that FruityMesh should be running on (<em>boardId</em>, a.k.a. <em>boardType</em>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SERIAL_NUMBER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The given serial number as ASCII (zero terminated)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NODE_KEY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Should be securely and randomly generated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MANUFACTURER_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set to manufacturer ID according to the
+<a href="https://www.bluetooth.org/en-us/specification/assigned-numbers/company-identifiers">BLE
+company identifiers</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEFAULT_NETWORK_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0: unenrolled<br>
+1: using an enrollment network<br>
+other: default enrollment</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEFAULT_NODE_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node ID to be used if not enrolled</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEVICE_TYPE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type of device according to <a href="#_device_types">Device Types</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SERIAL_NUMBER_INDEX</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique index that represents the serial number</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">52</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NETWORK_KEY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default network key if preenrollment is used</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_heap_usage"><a class="anchor" href="#_heap_usage"></a>Heap usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Heap usage (malloc / new) is prohibited in the FruityMesh codebase. To ensure that this rule is followed, a linker flag for ld is used that generates a linker error if malloc is used. The error looks something like this:</p>
+</div>
+<div class="paragraph">
+<p><code>Make: new_op.cc:(.text._Znwj+0xe): undefined reference to `__wrap_malloc'</code></p>
+</div>
+<div class="paragraph">
+<p>If this happened to you, you have to remove the malloc / new usage.</p>
+</div>
+</div>
+</div>
+</article>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">Specification</h3>
+  <div id="article-toc"></div>
+</aside>
+  </main>
+</div>
+  <footer class="footer fruitymesh-footer-padding">
+<p>This project is under active development at the <a href="http://www.mwaysolutions.com/" >M-Way Solutions GmbH,</a> Germany.</p>
+<p>We use FruityMesh ourselves in conjunction with our custom MeshGateway to build services such as connected lights, asset tracking and much more for our customers.</p>
+</footer>
+<script type="text/javascript">
+  window.antora = window.antora || {}
+  window.antora.basePath = '..'
+  window.antora.pagePath = '/fruitymesh/Specification.html'
+</script>
+<script src="../_/js/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js"></script>
+<script src="../_/js/vendor/search.js"></script>
+<script async src="../_/../search-index.js"></script>
+<script src="../_/js/vendor/highlight.js"></script>
+<script src="../_/js/vendor/zoom.js"></script>
+<script>hljs.initHighlighting()</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
+<script>
+  tocbot.init({
+    tocSelector: '#article-toc',
+    contentSelector: 'article',
+    headingSelector: 'h2, h3, h4, h5, h6',
+    collapseDepth: 6,
+    positionFixedSelector: '#article-toc',
+    scrollSmooth: true,
+  });
+  var tocList = document.getElementById('article-toc').getElementsByClassName('toc-list');
+  if (tocList && tocList.length > 0 && tocList[0].childNodes.length > 0) {
+    document.getElementById('article-toc').parentNode.classList.remove('hidden');
+  }
+</script>
+</body>
+
+</html>

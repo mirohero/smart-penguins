@@ -1,0 +1,5 @@
+The supplemental_ui folder is used by antora to "patch" in changes in the UI.
+You can use multiple supplemental_ui files for slightly different versions of your UI.
+For bigger changes customize the UI itself.
+There is no offiicial documentation on this matter yet
+For more info refer to link:https://gitlab.com/antora/antora/issues/147#note_57564473[this discussion] for now

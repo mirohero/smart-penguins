@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers :: Fruitymesh</title>
+  <link rel="canonical" href="http://mwaylabs.github.io/fruitymesh/fruitymesh/Developers.html">
+  <meta name="generator" content="Antora 2.0.0">
+  <link rel="stylesheet" href="../_/css/site.css">
+  <link rel="stylesheet" href="../_/css/footer.css">
+<link rel="icon" type="image/png" href="../_/img/favicon.png" />
+</head>
+
+<body class="article">
+  <header class="header" role="banner">
+<header class="header" role="banner">
+  <div class="navbar-top">
+    <a class="navbar-logo" id="fruitymesh-logo-padding" href="https://mwaylabs.github.io/fruitymesh/fruitymesh/index.html">
+      <div class="navbar-item">
+        <img src="../_/img/fruitymesh_logo.png" alt="Fruitymesh">
+      </div>
+    </a>
+    <div class="navbar-item">
+      <div id="search-wrapper">
+        <input id="search-input" type="text" placeholder="Search...">
+      </div>
+    </div>
+  </div>
+  <nav class="navbar-bottom fruitymesh-header-color">
+    <a href="https://github.com/mwaylabs/fruitymesh">
+      <div class="navbar-item">Fruitymesh on Github</div>
+    </a>
+  </nav>
+</header>
+
+</header>
+  <div class="main-wrapper">
+<div class="navigation-container" data-component="" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <button class="navigation-toggle"></button>
+  <nav class="nav-menu">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Quick-Start.html">Quick Start</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Usage.html">Usage</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Features.html">Features</a>
+      </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="Developers.html">Developers</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Specification.html">Specification</a>
+      </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Modules.html">Modules</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AdvertisingModule.html">Advertising Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DebugModule.html">Debug Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DfuModule.html">DFU Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EnrollmentModule.html">Enrollment Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="IoModule.html">IO Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MeshAccessModule.html">Mesh Access Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Node.html">Node</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ScanningModule.html">Scanning Module</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="StatusReporterModule.html">Status Report Module</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Logger.html">Logger</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Class-Structure.html">Class Structure</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Debugging.html">Debugging</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Battery-Consumption.html">Battery Consumption</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RecordStorage.html">Record Storage</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="The-FruityMesh-Algorithm.html">The Fruitymesh Algorithm</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="The-Algorithm-in-Detail.html">The Algorithm in Detail</a>
+      </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Simulator.html">Simulator</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="Tutorials.html">Tutorials</a>
+    <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Implementing-a-Custom-Module.html">Implementing a Custom Module</a>
+      </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="FAQ.html">FAQ</a>
+      </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<article class="doc"><a name="section-top"></a>
+<h1>Developers</h1>
+<div class="sect1">
+<h2 id="_file_structure"><a class="anchor" href="#_file_structure"></a>File Structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a list and description of the most important folders in the repository.</p>
+</div>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>├── config/<br>
+├── └── featuresets/<br>
+├── inc/<br>
+├── ├── c/<br>
+├── └── nrf52/<br>
+├── inc_c/<br>
+├── linker/<br>
+├── sdk/<br>
+├── softdevice/<br>
+├── src/<br>
+├── ├── base/<br>
+├── ├── c/<br>
+├── ├── mesh/<br>
+├── ├── modules/<br>
+├── ├── utility/<br>
+├── ├── Boardconfig.cpp<br>
+├── ├── Config.cpp<br>
+├── ├── FruityMesh.cpp<br>
+├── ├── GlobalState.cpp<br>
+├── └── Main.cpp<br>
+├── util/<br>
+└── src_examples/</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">configuration header files<br>
+different build configurations<br>
+main include directory for C++ headers<br>
+includes for c code<br>
+specific nrf52 includes<br>
+include directory for C headers<br>
+linker scripts<br>
+modified nRF SDKs<br>
+softdevice hex files<br>
+<br>
+wrappers for SoftDevice functions<br>
+drivers and other c code<br>
+mesh functionality<br>
+functionality wrapped in modules<br>
+helper classes<br>
+runtime pin and board configuration<br>
+configuration<br>
+bootup and main functionality<br>
+holds references to basic classes<br>
+Startup Code<br>
+tools and utilities<br>
+code templates and examples</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Functionality that is not part of the meshing algorithm should be placed in the <code>fruitymesh/modules/</code> folder and the module class extended. A module receives all events that it is interested in and can save and load its configuration from flash memory.</p>
+</div>
+<div class="paragraph">
+<p>Have a look at <a href="Class-Structure.html" class="page">Class Structure</a> for some more detailed explanations on how the code is structured. Also keep in mind <a href="CherrySim.html" class="page">Instances</a> when implementing new functionalities.</p>
+</div>
+<div class="paragraph">
+<p>There are some utilities in the <code>/util</code> folder, for example a python script that opens a putty terminal for all connected serial devices and a Wireshark dissector that can be used together with the nRF Sniffer to inspect the advertising packets.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuring_fruitymesh"><a class="anchor" href="#_configuring_fruitymesh"></a>Configuring FruityMesh</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most settings are found in the <code>fruitymesh/config/</code> folder in <code>Config.h</code>. Module specific settings are kept within the module&#8217;s header and cpp file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_feature_sets"><a class="anchor" href="#_feature_sets"></a>Feature Sets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FruityMesh uses so called featuresets for creating different distributions for different use-cases. A featureset defines the compile time and run time configuration for a node. The make process can be configured differently for a featureset, a number of different defines or macros can be used during compile time and different code is used during runtime. This also allows FruityMesh to run on a number of different boards (different pin settings or configuration) with the same binary. You can specify the featureset by e.g. calling make with <code>make FEATURESET=featureset_name</code> or by creating a <code>Makefile.local</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_memory_requirements"><a class="anchor" href="#_memory_requirements"></a>Memory Requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FruityMesh doesn&#8217;t run on devices with only 16kb of RAM. It may be possible to optimize the build and resize some buffers, but this is currently not supported. The binary of FruityMesh is around 50kb depending on the configuration and will easily fit on devices with 256kb flash together with the softdevice and still be updatable using dual bank updates.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_want_to_contribute"><a class="anchor" href="#_want_to_contribute"></a>Want To Contribute?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All kinds of contributions are welcome. Before you start coding, please contact us to align the development process.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_questions"><a class="anchor" href="#_about_questions"></a>About Questions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you have a general question, the best way is to open a new issue and label it with "question". This way, a knowledge base of questions and answers is maintained for easy access in the future. If it is a commit-specific comment or question, you can just comment under the commit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_forking"><a class="anchor" href="#_about_forking"></a>About Forking</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We&#8217;d love to develop the FruityMesh protocol as an interoperable protocol that works across devices from different developers. If you want to make any changes to the protocol itself, please contact us first so that we can work out a mutual agreement. Every implementation that is compatible with the current official release of FruityMesh is welcome to use the M-Way Solutions Company identifier (0x024D) in the manufacturer specific data along with the current mesh identifier. Be sure to read the <a href="Specification.html" class="page">Specification</a> for some basics. This is only very basic documentation, we try to continually improve the specification and add more details. In the meantime, do not hesitate to contact us or have a look in the implementation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_contributions"><a class="anchor" href="#_about_contributions"></a>About Contributions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The implementation is written in C++. This makes it easy to implement new functionality and separate it from other parts in a clean way. Refactoring or refinement tips are welcome. If you contribute, please comment your code thorougly and keep the implementation as readable as possible. This will help other contributors understand the code quickly.
+If you have documentation to add, please post a pull request as well.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_licence"><a class="anchor" href="#_licence"></a>Licence</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FruityMesh is published under the GPLv3 version, which is available in the repository.</p>
+</div>
+</div>
+</div>
+</article>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">Developers</h3>
+  <div id="article-toc"></div>
+</aside>
+  </main>
+</div>
+  <footer class="footer fruitymesh-footer-padding">
+<p>This project is under active development at the <a href="http://www.mwaysolutions.com/" >M-Way Solutions GmbH,</a> Germany.</p>
+<p>We use FruityMesh ourselves in conjunction with our custom MeshGateway to build services such as connected lights, asset tracking and much more for our customers.</p>
+</footer>
+<script type="text/javascript">
+  window.antora = window.antora || {}
+  window.antora.basePath = '..'
+  window.antora.pagePath = '/fruitymesh/Developers.html'
+</script>
+<script src="../_/js/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js"></script>
+<script src="../_/js/vendor/search.js"></script>
+<script async src="../_/../search-index.js"></script>
+<script src="../_/js/vendor/highlight.js"></script>
+<script src="../_/js/vendor/zoom.js"></script>
+<script>hljs.initHighlighting()</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
+<script>
+  tocbot.init({
+    tocSelector: '#article-toc',
+    contentSelector: 'article',
+    headingSelector: 'h2, h3, h4, h5, h6',
+    collapseDepth: 6,
+    positionFixedSelector: '#article-toc',
+    scrollSmooth: true,
+  });
+  var tocList = document.getElementById('article-toc').getElementsByClassName('toc-list');
+  if (tocList && tocList.length > 0 && tocList[0].childNodes.length > 0) {
+    document.getElementById('article-toc').parentNode.classList.remove('hidden');
+  }
+</script>
+</body>
+
+</html>
