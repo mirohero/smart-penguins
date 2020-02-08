@@ -10,6 +10,52 @@
 		}
 	},
 	"moduleConfigs":[
-		
-	]
+		{
+			"moduleId":"CONFIG_V2",
+			"defaultLedMode":"LED_MODE_CONNECTIONS",
+			"terminalMode":"TERMINAL_PROMPT_MODE",
+			"meshConnectingScanTimeout":4,
+			"totalInConnections":2,
+			"meshScanIntervalHigh":10,
+			"meshScanWindowHigh":4,
+			"meshHandshakeTimeoutDs":20,
+			"advertiseOnChannel37":1,
+			"advertiseOnChannel38":1,
+			"advertiseOnChannel39":1
+		},
+		{
+			"moduleId":"STATUS_REPORTER_MODULE",
+			"moduleVersion":1,
+			"moduleActive":false
+		},
+		{
+			"moduleId":"SCANNING_MODULE",
+			"moduleActive":false
+		},
+		{
+			"moduleId":"MESH_ACCESS_MODULE",
+			"enableAdvertising":true
+		},
+		{
+			"moduleId":"NODE_V2",
+			"moduleActive":true,
+			//,"enrollmentState":1,
+			//"networkId":456,
+			"networkKey":"11:24:56:91:4E:48:C1:E1:7B:7B:D9:22:17:AE:59:13"
+			//"userBaseKey":"10:49:27:38:13:52:90:32:26:64:72:13:85:46:35:26"
+		}
+
+	],
+	"featureset":[
+		"#define ENABLE_LOGGING",
+		"#define USE_SEGGER_RTT",
+		"#define ACTIVATE_ALARM_MODULE",
+		"#define ACTIVATE_MA_MODULE",
+		"#undef ACTIVATE_ASSET_MODULE",
+		"#undef ACTIVATE_DEBUG_MODULE",
+		"#define ACTIVATE_ADVERTISING_MODULE",
+		"#define SET_FW_GROUPID_CHIPSET GROUP_ID_NRF52",
+		"#define SET_FW_GROUPID_FEATURESET GROUP_ID_NRF52_MESH"
+
+	],
 }

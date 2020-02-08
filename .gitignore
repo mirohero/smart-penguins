@@ -16,6 +16,7 @@ fruityloader/.settings/
 
 # Visual Studio ignore
 .vs/
+.vscode/
 *.suo
 *.userosscache
 *.sln.docstates

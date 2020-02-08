@@ -11,7 +11,7 @@
 // ** Licensees holding valid commercial Bluerange licenses may use this file in
 // ** accordance with the commercial license agreement provided with the
 // ** Software or, alternatively, in accordance with the terms contained in
-// ** a written agreement between them and M-Way Solutions GmbH. 
+// ** a written agreement between them and M-Way Solutions GmbH.
 // ** For licensing terms and conditions see https://www.bluerange.io/terms-conditions. For further
 // ** information use the contact form at https://www.bluerange.io/contact.
 // **
@@ -38,15 +38,14 @@
 #include "IoModule.h"
 #include "MeshAccessModule.h"
 #include "GlobalState.h"
+#include "AlarmModule.h"
+#include "AssetModule.h"
 
-void setFeaturesetConfiguration_github(ModuleConfiguration* config, void* module)
+
+void setFeaturesetConfiguration_github(ModuleConfiguration *config, void *module)
 {
-	if(config->moduleId == ModuleId::BOARD_CONFIG)
+	if (config->moduleId == ModuleId::BOARD_CONFIG)
 	{
-		BoardConfiguration* c = (BoardConfiguration*) config;
-
-		//Additional boards can be put in here to be selected at runtime
-		//e.g. setBoard_123(c);
 	}
 	else if (config->moduleId == ModuleId::CONFIG)
 	{
@@ -57,9 +56,15 @@ void setFeaturesetConfiguration_github(ModuleConfiguration* config, void* module
 	{
 		//Specifies a default enrollment for the github configuration
 		//This enrollment will be overwritten as soon as the node is either enrolled or the enrollment removed
-		NodeConfiguration* c = (NodeConfiguration*) config;
+		NodeConfiguration *c = (NodeConfiguration *)config;
 		c->enrollmentState = EnrollmentState::ENROLLED;
+		// network id has to be the same for all devices
 		c->networkId = 11;
+		// nodeId to use for the devices to flash
+		c->nodeId = 17;
+		c->direction = 8;
+		c->boardType = 1;
+		c->checkDirection = true;
 		CheckedMemset(c->networkKey, 0x00, 16);
 	}
 }
@@ -74,6 +79,9 @@ u32 initializeModules_github(bool createModule)
 	size += GS->InitializeModule<EnrollmentModule>(createModule);
 	size += GS->InitializeModule<IoModule>(createModule);
 	size += GS->InitializeModule<MeshAccessModule>(createModule);
+	size += GS->InitializeModule<AssetModule>(createModule);
+	size += GS->InitializeModule<AlarmModule>(createModule);
+
 	return size;
 }
 

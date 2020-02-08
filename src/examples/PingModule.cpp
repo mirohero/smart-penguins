@@ -36,6 +36,7 @@
 #include <Node.h>
 #include <PingModule.h>
 #include <stdlib.h>
+#include <AdvertisingModule>
 
 extern "C"{
 

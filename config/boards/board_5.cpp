@@ -27,91 +27,55 @@
 // **
 // ****************************************************************************/
 ////////////////////////////////////////////////////////////////////////////////
-#pragma once
+#include <FruityHalNrf.h>
 
-#ifdef SIM_ENABLED
-#include <type_traits>
-#endif
-
-#include <cstring>
-#include <stdbool.h>
-#include "types.h"
-
-template<typename T, int N>
-class SimpleArray
+enum class ClockSource : u8
 {
-private:
-	T data[N];
-
-public:
-	static constexpr int length = N;
-
-	//SimpleArray should be a pod type and thus should not have ctor and dtor!
-	//SimpleArray() {};
-	//~SimpleArray() {};
-
-	T* getRaw()
-	{
-		return data;
-	}
-
-	T& operator[](int index) {
-#ifdef SIM_ENABLED
-		if (index >= length || index < 0)
-		{
-			SIMEXCEPTION(IndexOutOfBoundsException); //LCOV_EXCL_LINE assertion
-		}
-#endif
-		return data[index];
-	}
-
-	const T& operator[](int index) const {
-#ifdef SIM_ENABLED
-		if (index >= length || index < 0)
-		{
-			SIMEXCEPTION(IndexOutOfBoundsException); //LCOV_EXCL_LINE assertion
-		}
-#endif
-		return data[index];
-	}
-
-	inline void zeroData() {
-		setAllBytesTo(0);
-	}
-
-	inline void setAllBytesTo(u8 value) {
-#ifdef SIM_ENABLED
-		if (!std::is_pod<T>::value)
-		{
-			SIMEXCEPTION(ZeroOnNonPodTypeException);
-		}
-#endif
-		memset(data, value, sizeof(T) * length);	//CODE_ANALYZER_IGNORE Must be possible to compile for non pod types (cause it's a template), but wont be executed.
-	}
-
-	inline int size() {
-		int s = 0;
-		for (int i = 0; i < length; i++) {
-			if (data[i] != 0) {
-				s++;
-			}
-		}
-		return s;
-	}
-
-	inline bool has(T o) {
-		for (int i = 0; i < length; i++) {
-			if (data[i] == o) {
-				return true;
-			}
-		}
-		return false;
-	}
-
-	inline void pop_front() {
-		for (int i = 0; i < length - 1; i++) {
-			data[i] = data[i + 1];
-		}
-		data[length - 1] = 0;
-	}
+	CLOCK_SOURCE_RC = 0,
+	CLOCK_SOURCE_XTAL = 1,
+	CLOCK_SOURCE_SYNTH = 2
 };
+
+enum class ClockAccuracy : u8
+{
+	CLOCK_ACCURACY_250_PPM = 0, //Default
+	CLOCK_ACCURACY_500_PPM = 1,
+	CLOCK_ACCURACY_150_PPM = 2,
+	CLOCK_ACCURACY_100_PPM = 3,
+	CLOCK_ACCURACY_75_PPM = 4,
+	CLOCK_ACCURACY_50_PPM = 5,
+	CLOCK_ACCURACY_30_PPM = 6,
+	CLOCK_ACCURACY_20_PPM = 7,
+	CLOCK_ACCURACY_10_PPM = 8,
+	CLOCK_ACCURACY_5_PPM = 9,
+	CLOCK_ACCURACY_2_PPM = 10,
+	CLOCK_ACCURACY_1_PPM = 11,
+};
+
+//PCA10040 - nRF52 DK
+void setBoard_5(BoardConfiguration *c)
+{
+#ifdef NRF52
+	if (c->boardType == 5)
+	{
+		c->led1Pin = 18;
+		c->led2Pin = 19;
+		c->led3Pin = 17;
+		c->ledActiveHigh = true;
+		c->button1Pin = 13;
+		c->buttonsActiveHigh = false;
+		c->uartRXPin = -1;
+		c->uartTXPin = -1;
+		c->uartCTSPin = -1;
+		c->uartRTSPin = -1;
+		c->uartBaudRate = UART_BAUDRATE_BAUDRATE_Baud1M;
+		c->dBmRX = -96;
+		c->calibratedTX = -55;
+		c->lfClockSource = (u8)ClockSource::CLOCK_SOURCE_XTAL;
+		c->lfClockAccuracy = (u8)ClockAccuracy::CLOCK_ACCURACY_30_PPM; //10ppm confirmed by e-mail
+		c->dcDcEnabled = true;
+		// Use chip input voltage measurement
+		c->batteryAdcInputPin = -2;
+	}
+#endif
+}

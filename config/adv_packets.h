@@ -236,12 +236,10 @@ typedef struct
 
 	u32 encryptionMIC;
 
-
 }advPacketAssetServiceData;
 STATIC_ASSERT_SIZE(advPacketAssetServiceData, SIZEOF_ADV_STRUCTURE_ASSET_SERVICE_DATA);
 
 #pragma pack(pop)
-
 
 //####### Further definitions #################################################
 

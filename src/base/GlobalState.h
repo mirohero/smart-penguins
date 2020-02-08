@@ -51,7 +51,7 @@
 #include "ConnectionAllocator.h"
 #include "ModuleAllocator.h"
 
-constexpr int MAX_MODULE_COUNT = 17;
+constexpr int MAX_MODULE_COUNT = 23;
 
 class ClcComm;
 class VsComm;

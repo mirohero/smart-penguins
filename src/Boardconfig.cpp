@@ -36,6 +36,7 @@
 extern void setBoard_0(BoardConfiguration* c);
 extern void setBoard_1(BoardConfiguration* c);
 extern void setBoard_4(BoardConfiguration* c);
+extern void setBoard_5(BoardConfiguration* c);
 extern void setBoard_18(BoardConfiguration* c);
 extern void setBoard_19(BoardConfiguration* c);
 
@@ -53,7 +54,7 @@ void Boardconf::ResetToDefaultConfiguration()
 	configuration.boardType = 1;
 #elif defined(NRF52832)
 	//NRF52-DK is default for platform NRF52
-	configuration.boardType = 4;
+	configuration.boardType = 5;
 #elif defined(NRF52840)
 	//NRF82840-DK is default for NRF52840
 	configuration.boardType = 18;
@@ -100,6 +101,7 @@ configuration.boardType = 19;
 	setBoard_0(&configuration);
 	setBoard_1(&configuration);
 	setBoard_4(&configuration);
+	setBoard_5(&configuration);
 	setBoard_18(&configuration);
 
 #ifdef SIM_ENABLED

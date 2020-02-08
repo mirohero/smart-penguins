@@ -170,11 +170,13 @@ void BootFruityMesh()
 //	Logger::getInstance().enableTag("FH");
 	Logger::getInstance().enableTag("TEST");
 	Logger::getInstance().enableTag("MODULE");
+	Logger::getInstance().enableTag("ALARMMOD");
+//	Logger::getInstance().enableTag("BROADCAST");
 	Logger::getInstance().enableTag("STATUSMOD");
 //	Logger::getInstance().enableTag("DEBUGMOD");
 	Logger::getInstance().enableTag("ENROLLMOD");
 //	Logger::getInstance().enableTag("IOMOD");
-//	Logger::getInstance().enableTag("SCANMOD");
+	Logger::getInstance().enableTag("SCANMOD");
 //	Logger::getInstance().enableTag("PINGMOD");
 	Logger::getInstance().enableTag("DFUMOD");
 	Logger::getInstance().enableTag("CLCMOD");
